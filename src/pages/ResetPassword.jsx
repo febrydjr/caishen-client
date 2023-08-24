@@ -21,7 +21,7 @@ function ResetPassword() {
 
   const handleSubmit = async (values) => {
     try {
-      await axios.patch("http://localhost:8000/api/auth/reset", values, {
+      await axios.patch("https://caishen-server-production.up.railway.app/api/auth/reset", values, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

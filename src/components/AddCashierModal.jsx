@@ -25,7 +25,7 @@ const AddCashierModal = ({ isOpen, onClose }) => {
   const toast = useToast();
   const handleSubmit = async (values) => {
     try {
-      await axios.post("http://localhost:8000/api/auth/register", {
+      await axios.post("https://caishen-server-production.up.railway.app/api/auth/register", {
         name: values.name,
         username: values.username,
         password: "Password123@",

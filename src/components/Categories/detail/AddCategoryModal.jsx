@@ -24,7 +24,7 @@ const AddProductModal = ({ isOpen, onClose, setUpdateCategory }) => {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        "http://localhost:8000/api/products/category",
+        "https://caishen-server-production.up.railway.app/api/products/category",
         {
           name: values.name,
         },

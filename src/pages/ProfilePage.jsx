@@ -64,7 +64,7 @@ export default function ProfilePage() {
   const fetchData = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.get("http://localhost:8000/api/profile", {
+      const response = await axios.get("https://caishen-server-production.up.railway.app/api/profile", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

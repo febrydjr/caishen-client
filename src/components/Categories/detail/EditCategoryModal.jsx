@@ -24,7 +24,7 @@ const EditCategoryModal = ({ isOpen, onClose, category, setUpdateCategory }) => 
     const token = localStorage.getItem("token");
     try {
       await axios.delete(
-        `http://localhost:8000/api/products/category/${category.id}`,
+        `https://caishen-server-production.up.railway.app/api/products/category/${category.id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -52,7 +52,7 @@ const EditCategoryModal = ({ isOpen, onClose, category, setUpdateCategory }) => 
 
   const handleSubmit = async (values) => {
     try {
-      await axios.patch("http://localhost:8000/api/products/category", {
+      await axios.patch("https://caishen-server-production.up.railway.app/api/products/category", {
         categoryId: String(category.id),
         name: values.name,
       });

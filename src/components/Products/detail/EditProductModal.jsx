@@ -112,7 +112,7 @@ const EditProductModal = ({
             formData.append("id_categories", values.category);
 
             await axios.patch(
-                `http://localhost:8000/api/products/${product.id}`,
+                `https://caishen-server-production.up.railway.app/api/products/${product.id}`,
                 formData
             );
             toast({
