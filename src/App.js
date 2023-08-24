@@ -12,7 +12,7 @@ import { Box } from "@chakra-ui/react";
 import { breakpoints } from "./themes/theme";
 
 const theme = extendTheme({ breakpoints });
-
+//deploy
 function App() {
   return (
     <ChakraProvider theme={theme}>
