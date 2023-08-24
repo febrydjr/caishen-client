@@ -24,7 +24,7 @@ const AddProductModal = ({ isOpen, onClose, setUpdateCategory }) => {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        "https://caishen-server.vercel.app/api/products/category",
+        "https://caishen-server-production.up.railway.app/api/products/category",
         {
           name: values.name,
         },

@@ -19,7 +19,7 @@ const CashierCards = ({ cashier }) => {
   const toast = useToast();
   const handleDelete = async (username) => {
     try {
-      await axios.delete(`https://caishen-server.vercel.app/api/profile/user/${username}`);
+      await axios.delete(`https://caishen-server-production.up.railway.app/api/profile/user/${username}`);
       toast({
         title: "User deleted!",
         status: "success",
@@ -40,7 +40,7 @@ const CashierCards = ({ cashier }) => {
 
   const handleActivate = async (username) => {
     try {
-      await axios.patch(`https://caishen-server.vercel.app/api/profile/user`, {
+      await axios.patch(`https://caishen-server-production.up.railway.app/api/profile/user`, {
         username: username,
       });
       toast({

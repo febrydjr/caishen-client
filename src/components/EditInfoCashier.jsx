@@ -32,7 +32,7 @@ function EditInfoCashier({ isOpen, onClose, email, username }) {
   const handleEmail = async () => {
     try {
       const response = await axios.patch(
-        "https://caishen-server.vercel.app/api/auth/email",
+        "https://caishen-server-production.up.railway.app/api/auth/email",
         {
           oldEmail: email,
           newEmail,
@@ -59,7 +59,7 @@ function EditInfoCashier({ isOpen, onClose, email, username }) {
   const handleUsername = async () => {
     try {
       const response = await axios.patch(
-        "https://caishen-server.vercel.app/api/auth/username",
+        "https://caishen-server-production.up.railway.app/api/auth/username",
         {
           oldUsername: username,
           newUsername,
