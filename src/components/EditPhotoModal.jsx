@@ -51,7 +51,7 @@ const EditPhotoModal = ({ isOpen, onClose, onSave, token }) => {
     } catch (error) {
       toast({
         title: "Error updating profile photo!",
-        description: error.response.data.message,
+        // description: error.response.data.message,
         status: "error",
         duration: 4000,
         isClosable: true,
