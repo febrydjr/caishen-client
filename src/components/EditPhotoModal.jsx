@@ -34,7 +34,7 @@ const EditPhotoModal = ({ isOpen, onClose, onSave, token }) => {
     formData.append("avatar", profilePhoto);
     const token = localStorage.getItem("token");
     try {
-      await axios.post("https://caishen-server-production.up.railway.app/api/profile/avatar", formData, {
+      await axios.post("https://caishen-server.vercel.app/api/profile/avatar", formData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

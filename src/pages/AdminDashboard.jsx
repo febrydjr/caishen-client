@@ -70,7 +70,7 @@ const AdminDashboard = () => {
   const fetchCashiers = async () => {
     try {
       const response = await axios.get(
-        "https://caishen-server-production.up.railway.app/api/profile/cashiers"
+        "https://caishen-server.vercel.app/api/profile/cashiers"
       );
       setCashiers(response.data.data);
     } catch (error) {

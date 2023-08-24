@@ -44,9 +44,9 @@ const Login = () => {
   }, []);
   const handleReset = async (values) => {
     try {
-      await axios.post("https://caishen-server-production.up.railway.app/api/auth/forgot", {
+      await axios.post("https://caishen-server.vercel.app/api/auth/forgot", {
         email: values.email,
-        FE_URL: "https://caishen-server-production.up.railway.app",
+        FE_URL: "https://caishen-server.vercel.app",
       });
       toast({
         title: "Link reset password sent",
@@ -69,7 +69,7 @@ const Login = () => {
   const handleLogin = async (values) => {
     try {
       const { identifier, password } = values;
-      const res = await axios.post("https://caishen-server-production.up.railway.app/api/auth/login", {
+      const res = await axios.post("https://caishen-server.vercel.app/api/auth/login", {
         identifier,
         password,
       });
