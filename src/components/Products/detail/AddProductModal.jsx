@@ -32,7 +32,7 @@ const AddProductModal = ({ isOpen, onClose, setUpdateProduct }) => {
   const fetchData = async () => {
     try {
       const res = await axios.get(
-        "https://caishen-server-production.up.railway.app/api/products/categories"
+        "https://caishen-server.vercel.app/api/products/categories"
       );
       setCategory(res.data.data);
     } catch (error) {
@@ -55,7 +55,7 @@ const AddProductModal = ({ isOpen, onClose, setUpdateProduct }) => {
       formData.append("id_categories", values.category);
 
       const token = localStorage.getItem("token");
-      await axios.post("https://caishen-server-production.up.railway.app/api/products", formData, {
+      await axios.post("https://caishen-server.vercel.app/api/products", formData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
