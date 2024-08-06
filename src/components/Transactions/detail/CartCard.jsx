@@ -85,7 +85,7 @@ function CartCards({ cart, setUpdateCarts }) {
             >
                 <Image
                     {...imageOptions}
-                    src={cart["product"]["image"]}
+                    src={cart.product || cart.image}
                 />
                 <Text {...titleOptions}>{cart["product"]["name"]}</Text>
                 <Spacer />

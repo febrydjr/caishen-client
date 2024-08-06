@@ -61,7 +61,7 @@ function ProductCard({ product, setUpdateCarts, setUpdateProduct, setPage, isEdi
         <GridItem
             {...gridOptions(product["is_active"])}
             id={product["id"]}
-            bgImage={getImage(product["image"])}
+            bgImage={product["image"]}
             onClick={() => handleClick(product["id"])}
         >
             <ProductStock stock={product["stock"]} />
