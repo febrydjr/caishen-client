@@ -46,7 +46,7 @@ const Login = () => {
     try {
       await axios.post("https://caishen-server.vercel.app/api/auth/forgot", {
         email: values.email,
-        FE_URL: "https://caishen-server-production.up.railway.app",
+        FE_URL: "https://caishen-server.vercel.app",
       });
       toast({
         title: "Link reset password sent",
@@ -129,6 +129,12 @@ const Login = () => {
           <Text fontSize={"4xl"}>CaishenPOS Login!</Text>
           <Text fontSize="12px" mb={8}>
             Welcome back! please enter your detail!
+          </Text>
+          <Text fontSize="12px" color={"red"}>
+            Login Admin: username = febrydjr and password = password
+          </Text>
+          <Text fontSize="12px" mb={8} color={"red"}>
+          Login User: username = andreadya and password = password
           </Text>
           <Formik
             initialValues={initialValues}
