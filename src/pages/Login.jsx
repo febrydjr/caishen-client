@@ -130,11 +130,11 @@ const Login = () => {
           <Text fontSize="12px" mb={8}>
             Welcome back! please enter your detail!
           </Text>
-          <Text fontSize="12px" color={"red"}>
-            Login Admin: username = febrydjr and password = password
+          <Text fontSize="14px" color={"red"}>
+            Login Admin: username = febrydjr and password = Password1!
           </Text>
-          <Text fontSize="12px" mb={8} color={"red"}>
-          Login User: username = andreadya and password = password
+          <Text fontSize="14px" mb={8} color={"red"}>
+          Login User: username = andreadya and password = Password1!
           </Text>
           <Formik
             initialValues={initialValues}
