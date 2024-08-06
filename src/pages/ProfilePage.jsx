@@ -115,7 +115,7 @@ export default function ProfilePage() {
             <CardBody textAlign="center">
               <center>
                 <Avatar
-                  src={getImage(avatar)}
+                  src={avatar}
                   alt="avatar"
                   borderRadius="full"
                   boxSize="160px"

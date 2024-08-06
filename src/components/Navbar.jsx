@@ -102,7 +102,7 @@ function Navbar({ searchQuery, setSearchQuery }) {
                 Sign Out
               </Button>
               <Link mr={4} as={RouterLink} to="/profile">
-                <Avatar name="User" src={getImage(avatar)} size="sm" ml={4} />
+                <Avatar name="User" src={avatar} size="sm" ml={4} />
               </Link>
             </>
           ) : (

@@ -73,7 +73,7 @@ const CashierCards = ({ cashier }) => {
       >
         <Box h={"200px"} borderBottom={"1px"} borderColor="black">
           <Img
-            src={getImage(cashier.avatar)}
+            src={cashier.avatar}
             roundedTop={"sm"}
             objectFit="cover"
             h="full"
